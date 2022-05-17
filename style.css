@@ -2,11 +2,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vh;
     height: 100vh;
     margin: 0;
     background: blue;
     font-family: 'Oswald', sans-serif;
+    font-size: 120%;
 }
+
 
 .card {
     background: #000000d0;
@@ -14,7 +17,7 @@ body {
     padding: 2em;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     margin: 1em;
 }
 
@@ -22,25 +25,54 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
+}
+.mainWeathercards {
+    position: relative;
+    width: 100%;
+    flex: 0 0 340px;
 }
 
-button{
+.weatherContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+button {
     margin: 0.5em;
     border-radius: 50%;
     border: none;
-    height: 2.5em;
-    width: 2.5em;
+    height: 44px;
+    width: 44px;
     outline: none;
-
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
 }
+
+button:hover{
+    background: #7c7c7c6b;
+}
+
 input.search-bar {
     border: none;
     outline: none;
-    padding: 0.5em;
+    padding: 0.4em 1em;
     border-radius: 24px;
-    background: rgb(53, 49, 49);
+    background: #7c7c7c2b;
     color: white;
     font-family: sans-serif;
-    font-size: 120%;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+h1.temp{
+    margin: 0;
+
+}
+
+.card-box {
+
 }
